@@ -6,7 +6,7 @@ Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
 Infine stampa separatamente i 3 array.*/
 
 
-const team = [
+const auto = [
     {
       marca: "Ferrari",
       modello: "f40",
@@ -45,17 +45,26 @@ const team = [
         {
           marca: "Ferrari",
           modello: "f40",
-          alimentazione: "benzina",
+          alimentazione: "gpl",
         },
         {
             marca: "Ferrari",
             modello: "f40",
-            alimentazione: "benzina",
+            alimentazione: "elettrica",
           },
           {
             marca: "Ferrari",
             modello: "f40",
-            alimentazione: "benzina",
+            alimentazione: "diesel",
           },
   ];
   
+  console.log(auto)
+
+  const autoBenzina= auto.filter((alimentazione) => {
+   if (alimentazione == 'benzina'){
+       return true;
+   }
+  });
+
+  console.log(autoBenzina);
