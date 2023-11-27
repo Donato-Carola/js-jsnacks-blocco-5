@@ -36,16 +36,13 @@ const persona = [
         },
   ];
   
-  const newArrayPersone = persona.map((nomeUser,cognomeUser,etàUser) => {
+  const newArrayPersone = persona.map((singolaPersona) => {
      
-    if (etàUser.età > 18 ){
-        console.log(`${nomeUser.nome} ${cognomeUser.cognome} ha ${etàUser.età}  può guidare `  )
-    }else{
-        console.log(`${nomeUser.nome} ${cognomeUser.cognome} ha ${etàUser.età} non può guidare `  )
-    }
-    
+   singolaPersona.nomePerson = singolaPersona.nome + ' ' + singolaPersona.cognome
+   singolaPersona.magiorenne = singolaPersona.età <= 18 
+   return singolaPersona;
      
   });
 
   console.log(newArrayPersone)
-  
+
