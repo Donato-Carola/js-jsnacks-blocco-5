@@ -38,8 +38,10 @@ const persona = [
   
   const newArrayPersone = persona.map((nomeUser,cognomeUser,etàUser) => {
      
-    if (etàUser.età < 18 ){
-        console.log(`${nomeUser.nome} ${cognomeUser.cognome} ha ${etàUser.età}  non può guidare `  )
+    if (etàUser.età > 18 ){
+        console.log(`${nomeUser.nome} ${cognomeUser.cognome} ha ${etàUser.età}  può guidare `  )
+    }else{
+        console.log(`${nomeUser.nome} ${cognomeUser.cognome} ha ${etàUser.età} non può guidare `  )
     }
     
      
