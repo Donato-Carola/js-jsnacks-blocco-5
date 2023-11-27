@@ -61,10 +61,26 @@ const auto = [
   
   console.log(auto)
 
-  const autoBenzina= auto.filter((alimentazione) => {
-   if (alimentazione == 'benzina'){
+  const autoBenzina= auto.filter((autoBen) => {
+   if (autoBen.alimentazione == 'benzina'){
        return true;
    }
   });
 
   console.log(autoBenzina);
+
+  const autoDiesel= auto.filter((autoBen) => {
+    if (autoBen.alimentazione == 'diesel'){
+        return true;
+    }
+   });
+ 
+   console.log(autoDiesel);
+
+   const autoNon= auto.filter((autoBen) => {
+    if (autoBen.alimentazione !== 'diesel' && autoBen.alimentazione !== 'benzina'){
+        return true;
+    }
+   });
+ 
+   console.log(autoNon);
