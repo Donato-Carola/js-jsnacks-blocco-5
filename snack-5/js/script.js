@@ -5,31 +5,32 @@ punti fatti e falli subiti*/
 
 const squadreVolley=[
     {nome:'Juve',
-     puntiFatii : 30,
-     falliSubiti:10
+    puntiFatti : numeroRandom(10,400),
+     falliSubiti:numeroRandom(10,400),
+    },
+    {nome:'Juve',
+     puntiFatti : numeroRandom(10,400),
+     falliSubiti:numeroRandom(10,400),
 
     },
     {nome:'Juve',
-     puntiFatii : 30,
-     falliSubiti:10
+    puntiFatti : numeroRandom(10,400),
+    falliSubiti:numeroRandom(10,400),
+    },
+    {nome:'Juve',
+    puntiFatti : numeroRandom(10,400),
+     falliSubiti:numeroRandom(10,400),
 
     },
     {nome:'Juve',
-     puntiFatii : 30,
-     falliSubiti:10
-
-    },
-    {nome:'Juve',
-     puntiFatii : 30,
-     falliSubiti:10
-
-    },
-    {nome:'Juve',
-     puntiFatii : 30,
-     falliSubiti:10
+    puntiFatti : numeroRandom(10,400),
+     falliSubiti:numeroRandom(10,400),
 
     },
 ]
 
-const randomNum=Math.floor(Math.random()*50)
-console.log(randomNum)
+function numeroRandom(min,max){
+    return Math.floor(Math.random() * max - min) + min;
+}
+
+console.log(squadreVolley)
